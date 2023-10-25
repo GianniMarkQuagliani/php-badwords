@@ -26,7 +26,12 @@
         echo "<p>Paragrafo Originale:</p>";
         echo "<p>$paragrafo</p>";
         echo "<p>Lunghezza del Paragrafo: $lunghezza_paragrafo caratteri</p>";
-    } 
+
+        // Stampare il paragrafo originale e la sua lunghezza
+        echo "<p>Paragrafo Originale:</p>";
+        echo "<p>$paragrafo</p>";
+        echo "<p>Lunghezza del Paragrafo: $lunghezza_paragrafo caratteri</p>";
+    }
     ?>
 </body>
 </html>
