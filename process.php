@@ -10,12 +10,16 @@
     // controllo se i dati sono stati inviati al server tramite un modulo HTML con nomi di campo corrispondenti.
     if (isset($_POST['paragrafo']) && isset($_POST['badword'])) {
 
-        // Ottenere il paragrafo da censurare dal modulo
+        // Ottenere il paragrafo e la parola da censurare dal modulo
         $paragrafo = $_POST['paragrafo'];
 
         // Calcolare la lunghezza del paragrafo
         $lunghezza_paragrafo = strlen($paragrafo);
         
+        // Stampare il paragrafo originale e la sua lunghezza
+        echo "<p>Paragrafo Originale:</p>";
+        echo "<p>$paragrafo</p>";
+        echo "<p>Lunghezza del Paragrafo: $lunghezza_paragrafo caratteri</p>";
     } 
     ?>
 </body>
