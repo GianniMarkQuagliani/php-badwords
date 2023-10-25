@@ -31,7 +31,14 @@
         echo "<p>Paragrafo Originale:</p>";
         echo "<p>$paragrafo</p>";
         echo "<p>Lunghezza del Paragrafo: $lunghezza_paragrafo caratteri</p>";
-    }
+
+        // Stampare il paragrafo censurato e la sua lunghezza
+        echo "<p>Paragrafo Censurato:</p>";
+        echo "<p>$paragrafo_censurato</p>";
+        echo "<p>Lunghezza del Paragrafo Censurato: " . strlen($paragrafo_censurato) . " caratteri</p>";
+    } else {
+        echo "I dati non sono stati inviati correttamente.";
+    } 
     ?>
 </body>
 </html>
