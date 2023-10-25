@@ -13,8 +13,14 @@
         // Ottenere il paragrafo e la parola da censurare dal modulo
         $paragrafo = $_POST['paragrafo'];
 
+        // Ottenere la parola da censurare dal modulo
+        $badword = $_POST['badword'];
+        
         // Calcolare la lunghezza del paragrafo
         $lunghezza_paragrafo = strlen($paragrafo);
+
+        // Sostituire tutte le occorrenze della parola da censurare con ***
+        $paragrafo_censurato = str_ireplace($badword, '***', $paragrafo);
         
         // Stampare il paragrafo originale e la sua lunghezza
         echo "<p>Paragrafo Originale:</p>";
